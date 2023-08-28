@@ -29,6 +29,7 @@ class TestTodo(unittest.TestCase):
     
     def test_update(self):
         add("Bis 3.09 abgeben")
+        #update Funktion ausführen
         update(0)
         self.assertTrue(get(0).isCompleted)
 
