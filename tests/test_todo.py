@@ -7,7 +7,7 @@ class TestTodo(unittest.TestCase):
         #todo hinzufügen
         add("Bis 3.09 abgeben")
         todos = get_all()
-        self.assertEqual(todos[0].text, "Bis 3.09 abgeben")
+        self.assertEqual(todos[0].text, "Bbbis 3.09 abbbgebbben")
         self.assertFalse(todos[0].isCompleted)
     
     def test_get_all(self):
