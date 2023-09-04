@@ -1,17 +1,20 @@
 from dataclasses import dataclass
+from datetime import datetime
 
 todos = []#Hier werden die Daten in einer Liste gespeichert
 
 
 @dataclass
 class todo:
-    text: str
+    title: str
+    date: datetime
     isCompleted: bool = False
 
 
-def add(title):
+def add(title, date):
     title = title.replace('b', 'bbb').replace('B', 'Bbb')#Ver-BBB-isierung
-    todos.append(todo(title))
+    date = datetime.strptime(date, '%Y-%m-%d')
+    todos.append(todo(title, date))
 
 
 def get_all():
