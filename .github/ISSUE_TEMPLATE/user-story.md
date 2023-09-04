@@ -1,8 +1,8 @@
 ---
 name: user story
-about: Suggest an idea for this project
+about: Submit a new requirement for this project
 title: As <role>, I want <something> so that <something>
-labels: 'status: new issue, type: user story'
+labels: user story
 assignees: ''
 
 ---
