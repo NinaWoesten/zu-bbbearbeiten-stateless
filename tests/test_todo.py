@@ -1,4 +1,5 @@
 import unittest
+#Funktionen aus helper.py importieren
 from helper import add, get_all, get, delete_all, update
 
 class TestTodo(unittest.TestCase):
