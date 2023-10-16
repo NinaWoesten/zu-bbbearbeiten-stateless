@@ -9,4 +9,6 @@ class TestCSVDownload(unittest.TestCase):
             {"title": "Item 1", "category": "Category A", "description": "Description 1"},
             {"title": "Item 2", "category": "Category B", "description": "Description 2, mit Komma},
         ]
- csv_string = helper.get_csv(sample_data)
+ csv_string = get_csv(sample_data)
+
+        self.assertTrue(csv_string)
