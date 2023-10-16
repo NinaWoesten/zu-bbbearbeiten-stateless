@@ -4,8 +4,8 @@
 name: Python package
 
 on:
-  push:
-    branches: [ 1641-musterloesung ]
+  pull:
+    branches: main
 
 jobs:
   test:
