@@ -5,7 +5,7 @@ name: Python package
 
 on:
   pull:
-    branches: [ 1641-musterloesung ]
+    branches: main
 
 jobs:
   test:
